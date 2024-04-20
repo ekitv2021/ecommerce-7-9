@@ -7,4 +7,5 @@ export interface Product {
     isAvailable: boolean,
     manufacturedDate: string,
     description?: string
+    
 }
