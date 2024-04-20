@@ -1,0 +1,40 @@
+<form [formGroup]="updateForm" *ngIf="product$ | async as prod" (ngSubmit)="updateProduct()">
+    <div>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name" [(ngModel)]="prod.name">
+    </div>
+    <div class="alert alert-danger" *ngIf="f['name'].invalid && f['name'].touched">
+        Name is required
+    </div>
+    <div>
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" formControlName="price" [(ngModel)]="prod.price">
+    </div>
+    <div class="alert alert-danger" *ngIf="f['price'].invalid && f['price'].touched && f['price'].hasError('min')">
+        Price cannot be less than 100
+    </div>
+    <div class="alert alert-danger" *ngIf="f['price'].invalid && f['price'].touched && f['price'].hasError('required')">
+        Price is required
+    </div>
+    <div>
+        <label for="code" class="form-label">Code</label>
+        <input type="text" class="form-control" id="code" formControlName="code" [(ngModel)]="prod.code">
+    </div>
+    <div class="alert alert-danger" *ngIf="f['code'].invalid && f['code'].touched">
+        Code is required
+    </div>
+    <div>
+        <input type="checkbox" class="form-check-input" id="isAvailable" formControlName="isAvailable" [(ngModel)]="prod.isAvailable">
+        <label for="isAvailable" class="form-check-label ms-3">isAvailable</label>
+    </div>
+    <div>
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" 
+        rows="4" formControlName="description" [(ngModel)]="prod.description" >
+        </textarea>
+    </div>
+    <input type="hidden" formControlName="image" [(ngModel)]="prod.image">
+    <input type="hidden" formControlName="manufacturedDate" [(ngModel)]="prod.manufacturedDate">
+    <button type="submit" class="btn btn-primary m-3" 
+    [disabled]="updateForm.invalid">Submit</button>
+</form>

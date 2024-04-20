@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-primary m-3" routerLink="/products/add">Add Product</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4" *ngFor="let p of products$ | async">
+        <div class="card border-0">
+            <img [src]="p.image" [ngStyle]="{'height':'200px','width':'250px'}">
+            <div class="card-body">        
+                <div class="card-title"><h3>{{p.name | uppercase}}</h3></div>
+                <div class="card-text">{{p.price | currency : 'INR'}}</div>
+                <a class="btn btn-info m-2" [routerLink]="['/products',p.id,'view']">View</a>
+                <a class="btn btn-warning m-2" [routerLink]="['/products',p.id,'update']">Update</a>
+                <button class="btn btn-danger m-2" (click)="deleteProduct(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

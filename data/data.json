@@ -1,0 +1,83 @@
+{
+  "products": [
+    {
+      "name": "one plus 6t",
+      "price": 60000.23,
+      "code": "M-01",
+      "isAvailable": true,
+      "image": "/assets/images/oneplus 6t.jpeg",
+      "manufacturedDate": "Thu Mar 14 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "id": "1"
+    },
+    {
+      "name": "lg tv",
+      "price": 20000.1,
+      "code": "T-01",
+      "isAvailable": true,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut vitae dolorem eos quam nam, fugit dolorum perspiciatis et rerum! Recusandae quo qui delectus animi totam nobis excepturi modi maiores.",
+      "image": "/assets/images/lgtv.png",
+      "manufacturedDate": "Wed Mar 13 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "id": "2"
+    },
+    {
+      "name": "samsung galaxy s22",
+      "price": 100000,
+      "code": "M-02",
+      "isAvailable": true,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut vitae dolorem eos quam nam, fugit dolorum perspiciatis et rerum! Recusandae quo qui delectus animi totam nobis excepturi modi maiores.",
+      "image": "/assets/images/samsung galaxy.jpeg",
+      "manufacturedDate": "Tue Mar 12 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "id": "3"
+    },
+    {
+      "name": "samsung automatic washing machine",
+      "id": "4",
+      "price": 40000.45465656756,
+      "code": "W-01",
+      "image": "/assets/images/washing machine.jpeg",
+      "isAvailable": true,
+      "manufacturedDate": "Thu Feb 8 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut vitae dolorem eos quam nam, fugit dolorum perspiciatis et rerum! Recusandae quo qui delectus animi totam nobis excepturi modi maiores."
+    },
+    {
+      "name": "iphone 14",
+      "id": "5",
+      "price": 90000.354545,
+      "code": "M-03",
+      "image": "/assets/images/iphone.jpeg",
+      "isAvailable": false,
+      "manufacturedDate": "Wed Jan 10 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut vitae dolorem eos quam nam, fugit dolorum perspiciatis et rerum! Recusandae quo qui delectus animi totam nobis excepturi modi maiores."
+    },
+    {
+      "name": "Apple watch",
+      "id": "6",
+      "price": 50000.3456,
+      "code": "WT-01",
+      "image": "/assets/images/apple watch.jpeg",
+      "isAvailable": true,
+      "manufacturedDate": "Tue Jan 23 2024 19:47:14 GMT+0530 (India Standard Time)",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut vitae dolorem eos quam nam, fugit dolorum perspiciatis et rerum! Recusandae quo qui delectus animi totam nobis excepturi modi maiores."
+    },
+    {
+      "id": "dbfe",
+      "name": "Samsung Phone",
+      "price": 60000,
+      "code": "P-5",
+      "isAvailable": true,
+      "description": "phone",
+      "image": "/assets/images/lgtv.png",
+      "manufacturedDate": "2024-04-20T05:06:24.400Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "harry"
+    },
+    {
+      "id": "2",
+      "name": "mike"
+    }
+  ]
+}
